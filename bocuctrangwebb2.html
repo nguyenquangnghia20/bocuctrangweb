@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tin Tức</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .top-menu {
+            background-color: #58c4bb;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .menu-list li {
+            display: inline;
+        }
+        .menu-list a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        .menu-list a:hover {
+            background-color: #58c4bb;
+        }
+        .content-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+        .main-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 70%;
+        }
+        .main-news {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .main-news img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+        .news-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .news-item {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .news-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .side-news {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            width: 30%;
+        }
+        .side-news ul {
+            list-style: none;
+            padding: 0;
+        }
+        .side-news li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .side-news a {
+            text-decoration: none;
+            color: #333;
+        }
+        .side-news a:hover {
+            color: #58c4bb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-menu">
+            <ul class="menu-list">
+                <li><a href="#">Nóng</a></li>
+                <li><a href="#">Mới</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Chủ đề</a></li>
+                <li><a href="#">Khám phá</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content-container">
+        <section class="main-section">
+            <div class="main-news">
+                <img src="https://mediabls.mediatech.vn/upload/image/202503/medium/541165_dc406e9572d8e5694beec643dfb9c25b.webp" alt="Hình ảnh tin chính">
+                <h1> Nga đồng ý ngừng tấn công vào cơ sở năng lượng của Ukraine </h1>
+            </div>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2025/2/3/gia-vang-hom-nay-ngay-3-2-17385875095681452974895.jpg" alt="Tin 1">
+                    <h3>Giá vàng hôm nay 19/3: Vàng nhanh lập đỉnh mới, đạt mức 98,7 triệu đồng/lượng</h3>
+                </div>
+                <div class="news-item">
+                    <img src="https://cdn2.tuoitre.vn/thumb_w/730/471584752817336320/2025/3/18/75afdc48-0a6d-486e-81de-cdfa11978f0b-17423314250701643761299.jpeg" alt="Tin 2">
+                    <h3>Tuyển Việt Nam đấu Campuchia: Khi ông Kim Sang Sik toan tính</h3>
+                </div>
+                <div class="news-item">
+                    <img src="https://image.tienphong.vn/w645/Uploaded/2025/rwbvhvobvvimsb/2025_03_19/193zelensky-6730-902.jpg" alt="Tin 3">
+                    <h3>Tổng thống Ukraine lên tiếng sau diễn đàn thương đỉnh Mỹ - Nga</h3>
+                </div>
+            </div>
+        </section>
+        <aside class="side-news">
+            <ul>
+                <li><a href="#">Cấm bơ TP.HCM mang đơn đối mới về nhà - Bài 3: Cần bộ đơn ván khó, người dân còn bối rối</a></li>
+                <li><a href="#">100 cán bộ Đoàn xuất sắc nhận Giải thưởng Lý Tự Trọng</a></li>
+                <li><a href="#">Sẽ quy đổi điểm trung tuyển đại học bằng đường</a></li>
+                <li><a href="#">Triều Tiên liên án các cuộc không kích của Mỹ vào Houthis</a></li>
+                <li><a href="#">Điều lạ phi đi bộ 30 tỷ đồng ở Hà Nội: Người bán nhiều hơn khách</a></li>
+                <li><a href="#">Giải mã Z61: Đội quân Nga đẩy lùi quân Ukraine tại Kursk</a></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>

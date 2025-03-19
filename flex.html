@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #e91e63;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .news-wrapper {
+            display: flex;
+            gap: 3%;
+            flex-wrap: wrap;
+        }
+        .news {
+            flex: 1;
+            min-width: 30%;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .news img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .news {
+                min-width: 48%;
+            }
+        }
+        @media (max-width: 480px) {
+            .news {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Bão mạng</div>
+        <div class="news-wrapper">
+            <div class="news">
+                <img src="https://blog.topcv.vn/wp-content/uploads/2020/09/edited_cong-nghe-thong-tin-la-gi-1.jpg" alt="Tin 1">
+                <p>Có nhiều cách định nghĩa về CNTT là gì. Ở nước ta, trong Nghị quyết Chính phủ 49/CP (ký ngày 04/08/1993), định nghĩa về CNTT được đưa ra như sau: “Công nghệ thông tin là tập hợp các phương pháp khoa học, các phương tiện và công cụ kỹ thuật hiện đại – chủ yếu là kĩ thuật máy tính và viễn thông – nhằm tổ chức khai thác và sử dụng có hiệu quả các nguồn tài nguyên thông tin rất phong phú và tiềm năng trong mọi lĩnh vực hoạt động của con người và xã hội”</p>
+            </div>
+            <div class="news">
+                <img src="https://nld.mediacdn.vn/thumb_w/640/291774122806476800/2023/12/6/3098507941181985043691448171331392180276731n-1701871105396431192803.jpg" alt="Tin 2">
+                <p>Giải đấu sẽ diễn ra từ ngày 16 đến ngày 31-12-2023 tại Nhà thi đấu huyện Thanh Trì (673 Ngọc Hồi, Văn Điển, Thanh Trì, Hà Nội) và được trực tiếp trên hệ sinh thái thể thao của VTVcab (Kênh ON Sports; App: ON, ON Sports TV; Facebook: ON Sports; Youtube: ON Bóng rổ).</p>
+            </div>
+            <div class="news">
+                <img src="https://ims.baoyenbai.com.vn/NewsImg/1_2024/306747_9-1-bong-da.jpg" alt="Tin 3">
+                <p>Nguyên nhân của việc đội tuyển bóng đá quốc gia Brazil bị FIFA "dọa” cấm tham gia các giải đấu quốc tế, bao gồm cả Copa America 2024 và World Cup 2026, là do Tòa án Thể thao bang Rio de Janeiro vào tháng trước đã tuyên bố cách chức Chủ tịch CBF Ednaldo Rodrigues với lý do cơ quan này phát hiện những dấu hiệu bất thường trong quy trình bầu ban lãnh đạo của CBF vào năm 2022.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
